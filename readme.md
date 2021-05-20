@@ -1,4 +1,4 @@
-Het Flex-Zipper project van andere:
+Het Flex-Zipper project van:
 	Ashraf
 	Ayoub
 	Bilal
