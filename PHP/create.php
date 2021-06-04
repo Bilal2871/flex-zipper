@@ -1,4 +1,5 @@
 <?php $title = "Portfolio maken"; ?>
+<?php $menuEnabled = false; ?>
 <?php require("../partials/head.php"); ?>
 
 <script src="https://cdn.tiny.cloud/1/kuruob7phyjg9e1sao6twpsxlcfwd4s9p13w69v7sgtunou2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -37,7 +38,7 @@
         </div>
 
         <h3>&nbsp;<i class="fas fa-user-graduate"></i> Opleidingen</h3>
-        <div class="formcontainer">
+        <div class="formcontainer" id="eductaionContainer">
             <label for="eductaion">Opleiding</label><br>
             <input type="text" name="eductaion" id="eductaion">
 
@@ -74,9 +75,30 @@
                 <option value="true">Ja</option>
                 <option value="false">Nee</option>
             </select><br>
-
-            
         </div>
+
+        <h3>&nbsp;<i class="fas fa-suitcase"></i> Stages</h3>
+
+        <div class="formcontainer">
+            <label for="internFunction">Functie</label><br>
+            <input type="text" name="internFunction" id="internFunction">
+
+            <label for="internEmployer">Werkgever</label><br>
+            <input type="text" name="internEmployer" id="internEmployer">
+
+            <label for="internPlace">Plaats</label><br>
+            <input type="text" name="internPlace" id="internPlace">
+
+            <label for="internStartperiod">Periode</label>
+            <label for="internEndperiod" class="halfway">Tot</label><br>
+            <input type="text" name="internStartperiod" id="internStartperiod" class="halfwidth" placeholder="DD-MM-YYYY">
+            <input type="text" name="internEndperiod" id="internEndperiod" class="halfwidth" placeholder="DD-MM-YYYY">
+
+            <label for="internshipArea">Omschrijving</label>
+            <textarea id="internshipArea" name="internshipArea"></textarea>
+        </div>
+
+
     </form>
 
 </body>
