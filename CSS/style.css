@@ -1,12 +1,17 @@
+:root {
+    --bg-color: #428eea;
+    --font: sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     max-width: 768px;
-    background: #608ce5;
+    background: var(--bg-color);
     margin:0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font);
 }
 
 .formcontainer {
@@ -30,7 +35,7 @@ h3 {
     margin-right: 2.5%;
     border-radius: 1rem;
     background-color: white;
-    border: 1px solid #608ce5;
+    border: 1px solid var(--bg-color);
     float: right;
     margin-bottom: 20px;
     padding-left: 15px;
@@ -44,7 +49,7 @@ h3 {
 }
 
 .formcontainer input:focus {
-    border: 2px solid #608ce5;
+    border: 2px solid var(--bg-color);
 }
 
 .halfwidth {

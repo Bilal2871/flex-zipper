@@ -1,0 +1,16 @@
+.fa-bars {
+	float: right;
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+h2 {
+	width: 100%;
+}
+
+header {
+	display: flex;
+    flex-direction: row;
+}

@@ -1,5 +1,5 @@
-<?php $pageTitle = "Portfolio maken" ?>
-<?php require("../partials/head.php") ?>
+<?php $title = "Portfolio maken"; ?>
+<?php require("../partials/head.php"); ?>
 
 <script src="https://cdn.tiny.cloud/1/kuruob7phyjg9e1sao6twpsxlcfwd4s9p13w69v7sgtunou2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
@@ -12,7 +12,7 @@
         });
   </script>
 <body>
-    <h2 class="center white">Inhoud portfolio</h2>
+    <?php require("../partials/header.php"); ?>
 
     <form action="#">
         <h3>&nbsp;<i class="fas fa-suitcase"></i> Werkervaring</h3>
