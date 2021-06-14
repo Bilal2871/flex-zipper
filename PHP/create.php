@@ -1,6 +1,7 @@
 <?php $title = "Portfolio maken"; ?>
 <?php $menuEnabled = false; ?>
 <?php require("../partials/head.php"); ?>
+<?php $_SESSION['post-data'] = $_POST; ?>
 
 <script src="https://cdn.tiny.cloud/1/kuruob7phyjg9e1sao6twpsxlcfwd4s9p13w69v7sgtunou2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
@@ -16,7 +17,7 @@
     <?php require("../partials/header.php"); ?>
 
     <form action="#">
-        <h3>&nbsp;<i class="fas fa-suitcase"></i> Werkervaring</h3>
+        <h3 class="createheader">&nbsp;<i class="fas fa-suitcase"></i> Werkervaring</h3>
 
         <div class="formcontainer">
             <label for="function">Functie</label><br>
@@ -37,8 +38,8 @@
             <textarea id="experienceArea" name="experienceArea"></textarea>
         </div>
 
-        <h3>&nbsp;<i class="fas fa-user-graduate"></i> Opleidingen</h3>
-        <div class="formcontainer" id="eductaionContainer">
+        <h3 class="createheader">&nbsp;<i class="fas fa-user-graduate"></i> Opleidingen</h3>
+        <div class="formcontainer" id="educationContainer">
             <label for="eductaion">Opleiding</label><br>
             <input type="text" name="eductaion" id="eductaion">
 
@@ -61,8 +62,8 @@
             <input type="text" name="endperiod" id="endperiod" class="halfwidth bottom" placeholder="DD-MM-YYYY">
         </div>
 
-        <h3>&nbsp;<i class="fas fa-medal"></i> Cursussen</h3>
-        <div class="formcontainer">
+        <h3 class="createheader">&nbsp;<i class="fas fa-medal"></i> Cursussen</h3>
+        <div class="formcontainer" id="courseContainer">
             <label for="course">Cursus</label><br>
             <input type="text" name="course" id="course">
 
@@ -77,8 +78,7 @@
             </select><br>
         </div>
 
-        <h3>&nbsp;<i class="fas fa-suitcase"></i> Stages</h3>
-
+        <h3 class="createheader">&nbsp;<i class="fas fa-suitcase"></i> Stages</h3>
         <div class="formcontainer">
             <label for="internFunction">Functie</label><br>
             <input type="text" name="internFunction" id="internFunction">

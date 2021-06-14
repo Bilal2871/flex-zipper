@@ -20,12 +20,20 @@ body {
     margin-bottom: 100px;
 }
 
-h3 {
+.createheader {
     /* display: inline-block; */
     background-color: silver;
     line-height: 3em;
     margin-bottom: 0px;
     width: 100%;
+}
+
+#educationContainer {
+    height: 380px;
+}
+
+#courseContainer {
+    height: 230px;
 }
 
 .formcontainer input, .formcontainer select {
@@ -58,4 +66,23 @@ h3 {
 
 .halfway {
     margin-left: 40%
+}
+
+.traitcontainer {
+    margin: 10px;
+}
+
+.traitcontainer ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: lightgray;
+    padding: 0px 5px;
+    border-radius: 10px; 
+    border: 1px solid lightgray;
+    cursor: pointer;   
+    margin: 3px;
+}
+
+.toggeled-background {
+    background-color: white !important;
 }
